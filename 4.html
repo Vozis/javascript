@@ -1,3 +1,5 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -33,12 +35,12 @@
 			const unitNumber = userNumber % 10; // остаток от деление на 10 - последняя цифра
 			console.log(unitNumber);
 
-			const tenNumber = Number.parseInt(userNumber / 10) % 10;
-			// Number.parseInt - чтобы отбрасывать дробную часть, остаток от деление на 10 - последняя цифра
+			const tenNumber = Math.trunc(userNumber / 10) % 10;
+			// остаток от деление на 10 - последняя цифра
 			console.log(tenNumber);
 
-			const hundredNumber = Number.parseInt(userNumber / 100) % 10;
-			// Number.parseInt - чтобы отбрасывать дробную часть, остаток от деление на 10 - последняя цифра
+			const hundredNumber = Math.trunc(userNumber / 100) % 10;
+			// остаток от деление на 10 - последняя цифра
 			console.log(hundredNumber);
 
 			console.log(
