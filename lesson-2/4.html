@@ -1,11 +1,13 @@
+<!-- @format -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Homework</title>
-</head>
-<body>
-<!--
+	<head>
+		<meta charset="UTF-8" />
+		<title>Homework4</title>
+	</head>
+	<body>
+		<!--
 Обязательное задание.
 
 Необходимо реализовать четыре функции, каждая функция должна принимать по два
@@ -28,10 +30,56 @@
 
 Необходимо для всех функций прописать комментарии jsdoc https://jsdoc.app/.
 -->
-<script>
-  "use strict";
+		<script>
+			"use strict";
 
-  // Здесь пишем решение, данный комментарий необходимо стереть.
-</script>
-</body>
+			/**
+			 * Функция сложения
+			 * @param {number} arg1 - число
+			 * @param {number} arg2 число
+			 * @returns {number} arg1 + arg2 результат вычисления
+			 */
+			function sum(arg1, arg2) {
+				return arg1 + arg2;
+			}
+
+			/**
+			 * Функция вычитания
+			 * @param {number} arg1 - число
+			 * @param {number} arg2 число
+			 * @returns {number} arg1 - arg2 результат вычисления
+			 */
+			function sub(arg1, arg2) {
+				if (arg1 > arg2) {
+					return arg1 - arg2;
+				} else if (arg1 < arg2) {
+					return arg2 - arg1;
+				} else {
+					return 0;
+				}
+			}
+
+			/**
+			 * Функция умножения
+			 * @param {number} arg1 - число
+			 * @param {number} arg2 число
+			 * @returns {number} arg1 * arg2 результат вычисления
+			 */
+			function mul(arg1, arg2) {
+				return arg1 * arg2;
+			}
+
+			/**
+			 * Функция деления
+			 * @param {number} arg1 - число
+			 * @param {number} arg2 число
+			 * @returns {number} arg1 / arg2 результат вычисления
+			 */
+			function div(arg1, arg2) {
+				return arg1 / arg2;
+			}
+
+			console.log(sub(4, 4));
+		</script>
+	</body>
 </html>
