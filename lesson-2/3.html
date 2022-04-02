@@ -2,12 +2,12 @@
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<title>Homework3</title>
-	</head>
-	<body>
-		<!--
+  <head>
+    <meta charset="UTF-8" />
+    <title>Homework3</title>
+  </head>
+  <body>
+    <!--
 Обязательное задание.
 
 Необходимо попросить пользователя ввести два числа в переменные `a` и `b`.
@@ -20,21 +20,22 @@
 `a` и `b`.
 В остальных случаях программа не должна ничего выводить.
 -->
-		<script>
-			"use strict";
+    <script>
+      "use strict";
 
-			const firstUserNumber = +prompt("Введите первое число");
-			const secondUserNumber = +prompt("Введите второе число");
+      const firstUserNumber = +prompt("Введите первое число");
+      const secondUserNumber = +prompt("Введите второе число");
 
-			if (firstUserNumber > 0 && secondUserNumber > 0) {
-				console.log(firstUserNumber - secondUserNumber);
-			} else if (firstUserNumber < 0 && secondUserNumber < 0) {
-				console.log(firstUserNumber * secondUserNumber);
-			} else if (firstUserNumber < 0 && secondUserNumber > 0) {
-				console.log(firstUserNumber + secondUserNumber);
-			} else if (firstUserNumber > 0 && secondUserNumber < 0) {
-				console.log(firstUserNumber + secondUserNumber);
-			}
-		</script>
-	</body>
+      if (firstUserNumber > 0 && secondUserNumber > 0) {
+        console.log(firstUserNumber - secondUserNumber);
+      } else if (firstUserNumber < 0 && secondUserNumber < 0) {
+        console.log(firstUserNumber * secondUserNumber);
+      } else if (
+        (firstUserNumber < 0 && secondUserNumber > 0) ||
+        (firstUserNumber > 0 && secondUserNumber < 0)
+      ) {
+        console.log(firstUserNumber + secondUserNumber);
+      }
+    </script>
+  </body>
 </html>

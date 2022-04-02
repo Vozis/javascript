@@ -2,12 +2,12 @@
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<title>Homework6</title>
-	</head>
-	<body>
-		<!--
+  <head>
+    <meta charset="UTF-8" />
+    <title>Homework6</title>
+  </head>
+  <body>
+    <!--
 Необязательное задание.
 
 Необходимо реализовать функцию, которая будет принимать первым аргументом
@@ -24,43 +24,43 @@ console.log(declinationOfNumber(5, "стул", "стула", "стульев"));
 Функция должна работать с любым словом и любым целым положительным числом.
 Все аргументы, которые будут передаваться функции будут верны.
 -->
-		<script>
-			"use strict";
+    <script>
+      "use strict";
 
-			const userProductNumber = +prompt("Введите положительное целое число");
-			const userFirstWord = prompt("Введите слово в единственном числе");
-			const userSecondWord = prompt(
-				"Введите слово в родительном падеже в единственном числе"
-			);
-			const userThirdWord = prompt(
-				"Введите слово в родительном падеже во множественном числе"
-			);
+      const userProductNumber = +prompt("Введите положительное целое число");
+      const userFirstWord = prompt("Введите слово в единственном числе");
+      const userSecondWord = prompt(
+        "Введите слово в родительном падеже в единственном числе"
+      );
+      const userThirdWord = prompt(
+        "Введите слово в родительном падеже во множественном числе"
+      );
 
-			const word = declinationOfNumber(
-				userProductNumber,
-				userFirstWord,
-				userSecondWord,
-				userThirdWord
-			);
+      const word = declinationOfNumber(
+        userProductNumber,
+        userFirstWord,
+        userSecondWord,
+        userThirdWord
+      );
 
-			function declinationOfNumber(count, one, two, five) {
-				const unitNumber = userProductNumber % 10;
-				const tenNumber = Math.trunc(userProductNumber / 10) % 10;
+      function declinationOfNumber(count, one, two, five) {
+        const unitNumber = userProductNumber % 10;
+        const tenNumber = Math.trunc(userProductNumber / 10) % 10;
 
-				if (unitNumber === 1) {
-					return one;
-				} else if (unitNumber > 1 && unitNumber < 5 && tenNumber !== 1) {
-					return two;
-				} else if (unitNumber > 1 && unitNumber < 5 && tenNumber === 1) {
-					return three;
-				} else if (unitNumber > 4 || unitNumber === 0) {
-					return five;
-				} else {
-					throw new Error("Введены неверные данные");
-				}
-			}
+        if (unitNumber === 1) {
+          return one;
+        } else if (unitNumber > 1 && unitNumber < 5 && tenNumber !== 1) {
+          return two;
+        } else if (unitNumber > 1 && unitNumber < 5 && tenNumber === 1) {
+          return five;
+        } else if (unitNumber > 4 || unitNumber === 0) {
+          return five;
+        } else {
+          throw new Error("Введены неверные данные");
+        }
+      }
 
-			console.log(`У меня есть ${userProductNumber} ${word}.`);
-		</script>
-	</body>
+      console.log(`У меня есть ${userProductNumber} ${word}.`);
+    </script>
+  </body>
 </html>

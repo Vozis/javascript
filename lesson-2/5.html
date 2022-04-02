@@ -2,12 +2,12 @@
 
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<title>Homework5</title>
-	</head>
-	<body>
-		<!--
+  <head>
+    <meta charset="UTF-8" />
+    <title>Homework5</title>
+  </head>
+  <body>
+    <!--
 Обязательное задание.
 
 Необходимо скопировать и вставить в данный скрипт все функции из 4 задания.
@@ -31,79 +31,80 @@ Infinity делать не нужно, однако, в случае если б
 
 Необходимо для всех функций прописать комментарии jsdoc https://jsdoc.app/.
 -->
-		<script>
-			"use strict";
+    <script>
+      "use strict";
 
-			console.log(mathOperation(4, 4, "-"));
+      console.log(mathOperation(4, 4, "-"));
 
-			/**
-			 * Функция выполнения математических операций
-			 * @param {number} arg1 - число, введенное пользователем
-			 * @param {number} arg2 - число, введенное пользователем
-			 * @param {string} operation - знак, определеяющий тип мат. операции
-			 * Функция подбирает в соответсвии со знаком, какую мат. операцию необходимо
-			 * вополнить и вызывает ее
-			 *
-			 */
-			function mathOperation(arg1, arg2, operation) {
-				if (operation === "+") {
-					return sum(arg1, arg2);
-				} else if (operation === "-") {
-					return sub(arg1, arg2);
-				} else if (operation === "*") {
-					return mul(arg1, arg2);
-				} else if (operation === "/") {
-					return div(arg1, arg2);
-				} else {
-					return NaN;
-				}
-			}
+      /**
+       * Функция выполнения математических операций
+       * @param {number} arg1 - число, введенное пользователем
+       * @param {number} arg2 - число, введенное пользователем
+       * @param {string} operation - знак, определеяющий тип мат. операции
+       * @returns {number} - результат выбранной мат. операции
+       * Функция подбирает в соответсвии со знаком, какую мат. операцию необходимо
+       * вополнить и вызывает ее
+       *
+       */
+      function mathOperation(arg1, arg2, operation) {
+        if (operation === "+") {
+          return sum(arg1, arg2);
+        } else if (operation === "-") {
+          return sub(arg1, arg2);
+        } else if (operation === "*") {
+          return mul(arg1, arg2);
+        } else if (operation === "/") {
+          return div(arg1, arg2);
+        } else {
+          return NaN;
+        }
+      }
 
-			/**
-			 * Функция сложения
-			 * @param {number} arg1 - число
-			 * @param {number} arg2 число
-			 * @returns {number} arg1 + arg2 результат вычисления
-			 */
-			function sum(arg1, arg2) {
-				return arg1 + arg2;
-			}
+      /**
+       * Функция сложения
+       * @param {number} arg1 - число
+       * @param {number} arg2 число
+       * @returns {number} arg1 + arg2 результат вычисления
+       */
+      function sum(arg1, arg2) {
+        return arg1 + arg2;
+      }
 
-			/**
-			 * Функция вычитания
-			 * @param {number} arg1 - число
-			 * @param {number} arg2 число
-			 * @returns {number} arg1 - arg2 результат вычисления
-			 */
-			function sub(arg1, arg2) {
-				if (arg1 > arg2) {
-					return arg1 - arg2;
-				} else if (arg1 < arg2) {
-					return arg2 - arg1;
-				} else {
-					return 0;
-				}
-			}
+      /**
+       * Функция вычитания
+       * @param {number} arg1 - число
+       * @param {number} arg2 число
+       * @returns {number} arg1 - arg2 результат вычисления
+       */
+      function sub(arg1, arg2) {
+        if (arg1 > arg2) {
+          return arg1 - arg2;
+        } else if (arg1 < arg2) {
+          return arg2 - arg1;
+        } else {
+          return 0;
+        }
+      }
 
-			/**
-			 * Функция умножения
-			 * @param {number} arg1 - число
-			 * @param {number} arg2 число
-			 * @returns {number} arg1 * arg2 результат вычисления
-			 */
-			function mul(arg1, arg2) {
-				return arg1 * arg2;
-			}
+      /**
+       * Функция умножения
+       * @param {number} arg1 - число
+       * @param {number} arg2 число
+       * @returns {number} arg1 * arg2 результат вычисления
+       */
+      function mul(arg1, arg2) {
+        return arg1 * arg2;
+      }
 
-			/**
-			 * Функция деления
-			 * @param {number} arg1 - число
-			 * @param {number} arg2 число
-			 * @returns {number} arg1 / arg2 результат вычисления
-			 */
-			function div(arg1, arg2) {
-				return arg1 / arg2;
-			}
-		</script>
-	</body>
+      /**
+       * Функция деления
+       * @param {number} arg1 - число
+       * @param {number} arg2 число
+       * @returns {number} arg1 / arg2 результат вычисления
+       */
+      function div(arg1, arg2) {
+        return arg1 / arg2;
+      }
+    </script>
+  </body>
 </html>
