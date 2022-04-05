@@ -44,21 +44,24 @@
        *
        */
 
-      const userPrintNumber = prompt(
+      const userPrintNumber = +prompt(
         "Введите целое положительное число от 0 до 999"
       );
 
       function getDigitsOfNumber(userPrintNumber) {
-        if (userPrintNumber >= 0 && userPrintNumber < 1000) {
-          const arr = userPrintNumber.split("").reverse();
-          const obj = {
-            units: arr[0],
-            dozens: arr[1],
-            hundreds: arr[2],
+        if (
+          Number.isInteger(userPrintNumber) &&
+          userPrintNumber >= 0 &&
+          userPrintNumber < 1000
+        ) {
+          return {
+            units: userPrintNumber % 10,
+            dozens: Math.floor(userPrintNumber / 10) % 10,
+            hundreds: Math.floor(userPrintNumber / 100) % 10,
           };
-          return obj;
         }
-        console.error("Ошибка исходных данных", {});
+        console.error("Ошибка исходных данных");
+        return {};
       }
 
       console.log(getDigitsOfNumber(userPrintNumber));
