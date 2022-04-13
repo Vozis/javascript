@@ -69,9 +69,10 @@
             также должен меняться.
             */
 
+      const spanWithText = document.querySelector("span:first-of-type");
+
       document.querySelector("#from").addEventListener("input", (event) => {
-        document.querySelector("span:first-of-type").textContent =
-          event.target.value;
+        spanWithText.textContent = event.target.value;
       });
 
       /*
@@ -129,8 +130,9 @@
       //   }
       //   if (event.target.value === "") {
       //     event.target.classList.add("error");
-      //   }
+      //   } else {
       //   event.target.classList.remove("error");
+      }
       // });
 
       formEl.addEventListener("input", (event) => {
@@ -142,9 +144,9 @@
           : event.target.classList.remove("error");
       });
 
-      /* 
+      /*
       заккоментировал свой код, он почему-то не работает, хотя 1:1 совпадает
-    
+
       */
     </script>
   </body>

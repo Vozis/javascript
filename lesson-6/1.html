@@ -72,7 +72,7 @@
       "Добавлено" и кнопка должна стать неактивной.
        */
 
-      const addProductToCart = function () {
+      const addProductToCart = function (event) {
         if (event.target.tagName === "BUTTON") {
           event.target.textContent = "Добавлено";
           event.target.disabled = true;
@@ -100,6 +100,7 @@
       labelEl.textContent = "Товар4";
 
       productEl.replaceWith(productCloneEl);
+
       /*
       Подскажите, а как мне добавить например эту карточку следующей по счету
       const newCard = document.createElement("div");
