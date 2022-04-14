@@ -1,0 +1,46 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="draggable_elements_container">
+      <p>Перетащи меня</p>
+      <p>и меня</p>
+    </div>
+    <div class="drop_container">Перетаскивать сюда</div>
+
+    <script>
+      "use strict";
+
+      const dragContainer = document.querySelector(
+        ".draggable_elements_container"
+      );
+      const dropContainer = document.querySelector(".drop_container");
+
+      [...dragContainer.children].forEach((el) => (el.draggable = "true"));
+
+      dragContainer.addEventListener("dragstart", (event) => {
+        event.target.classList.add("dragged");
+      });
+
+      dragContainer.addEventListener("dragend", (event) => {
+        event.target.classList.remove("dragged");
+      });
+
+      dropContainer.addEventListener("dragover", (event) => {
+        event.preventDefault();
+      });
+
+      dropContainer.addEventListener("drop", (event) => {
+        const draggedEl = dragContainer.querySelector(".dragged");
+        dropContainer.append(draggedEl);
+      });
+    </script>
+  </body>
+</html>
