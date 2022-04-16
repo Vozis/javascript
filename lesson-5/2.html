@@ -1,0 +1,158 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Homework2</title>
+  </head>
+  <body>
+    <!--
+Обязательное задание.
+
+Выполнить все задачи в теге script. Комментарии, в которых написаны задачи, не
+стирать, код с решением задачи пишем под комментарием.
+-->
+
+    <p class="dropdown">Привет :)</p>
+    <div class="dropdown">
+      <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        id="dropdownMenuButton"
+        data-toggle="dropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+      >
+        Dropdown button
+      </button>
+      <div class="menu dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Action</a>
+        <a class="dropdown-item" href="#">Another action</a>
+        <a class="dropdown-item" href="#">Something else here</a>
+      </div>
+    </div>
+
+    <script>
+      "use strict";
+
+      console.log("1 _________");
+      /*
+      1. Ко всем элементам, имеющим класс "dropdown-item" добавить еще один класс
+      "super-dropdown", необходимо использовать методы forEach и querySelectorAll и
+      свойство classList у элементов.
+       */
+
+      const itemEls = document.querySelectorAll(".dropdown-item");
+
+      // itemEls.forEach((item) => item.classList.add("super-dropdown"));
+
+      for (const item of itemEls) {
+        item.classList.add("super-dropdown");
+        console.log(item.outerHTML);
+      }
+
+      /* никак не могу понять как мне вывести в консоль элементы,
+      с которыми производил действия, в консоль именно html-тегами, а не строками
+      */
+
+      console.log("2 _________");
+      /*
+      2. У элемента с классом btn необходимо убрать класс "btn-secondary", если он
+      присутствует у этого элемента, либо добавить, если такого класса у элемента
+      не было.
+       */
+      console.log(document.querySelector(".btn").classList);
+
+      document
+        .querySelectorAll(".btn")
+        .forEach((el) => el.classList.toggle("btn-secondary"));
+
+      console.log(document.querySelector(".btn").classList);
+
+      /* Здесь тоже, если в консоль выводить, как вывести <button class="btn"..>
+        именно тегом, в удобнои виде, чтобы проверить убрал я "btn-secondary" или нет
+      */
+
+      console.log("3 _________");
+      /*
+      3. Необходимо удалить класс "dropdown-menu" у элемента, у которого
+      присутствует класс "menu".
+       */
+
+      console.log(document.querySelector(".menu").classList);
+
+      document.querySelector(".menu").classList.remove("dropdown-menu");
+
+      console.log(document.querySelector(".menu").classList);
+
+      /* а если было бы несколько элементов menu, чтобы мне их вывести в консоль
+      нужно так, как сделал в 1 задании вводить переменную и через for выводить каждый?
+      */
+
+      console.log("4 _________");
+      /*
+      4. Используя метод insertAdjacentHTML добавьте после div'a с классом
+      "dropdown" следующую разметку:
+        <a href="#">link</a>
+       */
+
+      const divEl = document.querySelector(".dropdown");
+      divEl.insertAdjacentHTML("afterend", '<a href="#">link</a>');
+
+      console.log(document);
+
+      console.log("5 _________");
+      /*
+      5. У элемента с id "dropdownMenuButton" замените id на "superDropdown".
+       */
+
+      const newId = document.getElementById("dropdownMenuButton");
+      newId.id = "superDropdown";
+
+      console.log(newId.id);
+
+      console.log("6 _________");
+      /*
+      6. Добавьте атрибут data-dd со значением 3 элементу у которого существует
+      атрибут "aria-labelledby" равный "dropdownMenuButton" используя dataset.
+       */
+
+      document
+        .querySelector('[aria-labelledby="dropdownMenuButton"]')
+        .setAttribute("data-dd", "3");
+
+      console.log(
+        document.querySelector('[aria-labelledby="dropdownMenuButton"]').dataset
+      );
+
+      console.log("7 _________");
+      /*
+      7. Удалите атрибут type у элемента с классом "dropdown-toggle".
+       */
+      console.log(document.querySelector(".dropdown-toggle").outerHTML);
+
+      document.querySelector(".dropdown-toggle").removeAttribute("type");
+
+      console.log(document.querySelector(".dropdown-toggle").outerHTML);
+
+      console.log("8 _________");
+      /*
+      8. Выведите в консоль все имеющиеся атрибуты и их значения тега у которого
+      есть все два класса btn и dropdown-toggle.
+      Вывод каждого атрибута и значений должен выглядеть следующим образом (пример):
+      Атрибут "class" содержит значение "btn btn-secondary dropdown-toggle"
+       */
+
+      const attributes = document.querySelector(
+        ".btn.dropdown-toggle"
+      ).attributes;
+
+      for (const attribute of attributes) {
+        console.log(
+          `Атрибут "${attribute.name}" содержит значение "${attribute.textContent}"`
+        );
+      }
+    </script>
+  </body>
+</html>

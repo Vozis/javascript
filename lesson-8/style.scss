@@ -1,0 +1,40 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Lato, sans-serif;
+  box-sizing: border-box;
+}
+
+@import '_variables';
+@import './src/blocks/container';
+@import './src/blocks/brand';
+@import './src/blocks/btn';
+@import './src/blocks/cart-card';
+@import './src/blocks/cart';
+@import './src/blocks/catalog';
+@import './src/blocks/collection';
+@import './src/blocks/featured-items';
+@import './src/blocks/filter-category';
+@import './src/blocks/filters-catalog';
+@import './src/blocks/footer';
+@import './src/blocks/header';
+@import './src/blocks/menu';
+@import './src/blocks/offer';
+@import './src/blocks/page-heading';
+@import './src/blocks/pagination';
+@import './src/blocks/photo-slider';
+@import './src/blocks/registration';
+@import './src/blocks/services';
+@import './src/blocks/subscribe';
+@import './src/blocks/tipography';
+@import './src/blocks/user-info-form';
+@import './src/blocks/product-card';
+@import './src/blocks/icon-close';
+@import './src/blocks/icon-cart-wrapper';
+@import './src/blocks/basket';
+
+.hidden {
+  display: none;
+}

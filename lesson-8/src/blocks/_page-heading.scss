@@ -1,0 +1,30 @@
+.page-heading {
+	min-height: 150px;
+	background-color: #f8f3f4;
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		min-height: inherit;
+
+		@media (max-width: 575px) {
+			flex-direction: column;
+			justify-content: space-evenly;
+		}
+	}
+
+	&__link {
+		color: #636363;
+
+		&:active {
+			font-weight: 700;
+			color: $major-color;
+		}
+	}
+
+	&__slash {
+		color: #636363;
+		margin: 0 3px;
+	}
+}

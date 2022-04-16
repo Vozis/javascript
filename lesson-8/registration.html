@@ -1,0 +1,305 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script
+			src="https://kit.fontawesome.com/fe37802d54.js"
+			crossorigin="anonymous"
+		></script>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Registration</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+			integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="header page__header">
+			<div class="container header__inner">
+				<div class="header__left">
+					<a href="index.html">
+						<img class="logo header__logo" src="img/logo.svg" alt="logo" />
+					</a>
+					<img
+						class="icon icon-search header__icon-search"
+						src="img/search.svg"
+						alt=""
+					/>
+				</div>
+				<div class="header__right">
+					<img
+						class="icon icon-burger header__icon-burger"
+						src="img/menu-burger.svg"
+						alt="menu"
+					/>
+					<img
+						class="icon icon-user header__icon-user"
+						src="img/person-logo.svg"
+						alt="user"
+					/>
+					<span class="icon-cart-wrapper header__icon-cart-wrapper">
+						<img
+							class="icon icon-cart icon-cart-wrapper__img"
+							src="img/basket.svg"
+							alt="cart"
+						/>
+						<span class="icon-cart-wrapper__badge">5</span>
+					</span>
+				</div>
+			</div>
+			<div class="header__menu hidden">
+				<img
+					src="img/close-icon.svg"
+					alt="close-icon"
+					class="icon-close menu__close"
+				/>
+				<nav class="menu">
+					<span class="menu__heading text--uppercase text--700">Menu</span>
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="#" class="link menu__link text--uppercase text--red"
+								>Man</a
+							>
+							<ul class="submenu__list menu__submenu">
+								<li class="submenu__item">
+									<a class="link submenu__link text--capitalize" href="#"
+										>Accessories</a
+									>
+								</li>
+								<li class="submenu__item">
+									<a class="link submenu__link text--capitalize" href="#"
+										>Bags</a
+									>
+								</li>
+								<li class="submenu__item">
+									<a class="link submenu__link text--capitalize" href="#"
+										>Denim</a
+									>
+								</li>
+								<li class="submenu__item">
+									<a class="link submenu__link text--capitalize" href="#"
+										>T-Shirts</a
+									>
+								</li>
+							</ul>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="link menu__link text--uppercase text--red"
+								>Woman</a
+							>
+
+							<ul class="submenu__list menu__submenu">
+								<li class="submenu__item">
+									<a class="link submenu__link text--capitalize" href="#"
+										>Accessories</a
+									>
+								</li>
+								<li class="submenu__item">
+									<a class="link submenu__link text--capitalize" href="#"
+										>Jackets & Coats</a
+									>
+								</li>
+								<li class="submenu__item">
+									<a class="link submenu__link text--capitalize" href="#"
+										>Polos</a
+									>
+								</li>
+								<li class="submenu__item">
+									<a class="link submenu__link text--capitalize" href="#"
+										>T-Shirts</a
+									>
+								</li>
+								<li class="submenu__item">
+									<a class="link submenu__link text--capitalize" href="#"
+										>Shirts</a
+									>
+								</li>
+							</ul>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="link menu__link text--uppercase text--red"
+								>Kids</a
+							>
+
+							<ul class="submenu__list menu__submenu">
+								<li class="submenu__item">
+									<a class="link submenu__link text--capitalize" href="#"
+										>Accessories</a
+									>
+								</li>
+								<li class="submenu__item">
+									<a class="link submenu__link text--capitalize" href="#"
+										>Jackets & Coats</a
+									>
+								</li>
+								<li class="submenu__item">
+									<a class="link submenu__link text--capitalize" href="#"
+										>Polos</a
+									>
+								</li>
+								<li class="submenu__item">
+									<a class="link submenu__link text--capitalize" href="#"
+										>T-Shirts</a
+									>
+								</li>
+								<li class="submenu__item">
+									<a class="link submenu__link text--capitalize" href="#"
+										>Shirts</a
+									>
+								</li>
+								<li class="submenu__item">
+									<a class="link submenu__link text--capitalize" href="#"
+										>Bags</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="header__dark hidden"></div>
+		</header>
+		<div class="page-heading">
+			<div class="page-heading__inner container">
+				<h1 class="text text--red heading-1 text--uppercase">registration</h1>
+			</div>
+		</div>
+		<div class="registration">
+			<div class="registration__inner container">
+				<form action="#" class="user-info-form registration__form">
+					<div class="text text--gray user-info-form__heading">Your Name</div>
+					<input
+						type="text"
+						class="user-info-form__input registration__input"
+						placeholder="First Name"
+					/>
+					<input
+						type="text"
+						class="user-info-form__input registration__input"
+						placeholder="Last Name"
+					/>
+					<div class="registration__radio">
+						<input type="radio" name="gender" value="male" />
+						<span class="text text--gray">Male</span>
+						<input type="radio" name="gender" value="female" />
+						<span class="text text--gray">Female</span>
+						<input type="radio" name="gender" value="other" />
+						<span class="text text--gray">Other</span>
+					</div>
+
+					<div class="text text--gray user-info-form__heading">
+						Login details
+					</div>
+					<input
+						type="email"
+						class="user-info-form__input registration__input"
+						placeholder="Email"
+					/>
+					<input
+						type="password"
+						class="user-info-form__input registration__input"
+						placeholder="Password"
+					/>
+					<div class="text text--gray registration__form-text">
+						Please use 8 or more characters, with at least 1 number and a
+						mixture of uppercase and lowercase letters
+					</div>
+					<button class="btn btn--red featured-items__btn-show">
+						JOIN NOW
+						<i
+							class="fa-solid fa-arrow-right-long btn__img btn__img--right"
+						></i>
+					</button>
+				</form>
+				<div class="registration__perks">
+					<div class="text text--gray registration__heading">
+						LOYALTY HAS ITS PERKS
+					</div>
+					<div class="text text--gray registration__text">
+						Get in on the loyalty program where you can earn points and unlock
+						serious perks. Starting with these as soon as you join:
+					</div>
+					<ul class="registration__list">
+						<li class="registration__item registration__text">
+							15% off welcome offer
+						</li>
+						<li class="registration__item registration__text">
+							Free shipping, returns and exchanges on all orders
+						</li>
+						<li class="registration__item registration__text">
+							$10 off a purchase on your birthday
+						</li>
+						<li class="registration__item registration__text">
+							Early access to products
+						</li>
+						<li class="registration__item registration__text">
+							Exclusive offers & rewards
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="subscribe">
+			<div class="subscribe__inner container">
+				<div class="subscribe__item subscribe__item--quote">
+					<img src="img/IMG_0103.JPG" alt="" class="subscribe__img" />
+					<p class="text subscribe__quote">
+						<q
+							>Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+							<i>pulvinar purus condimentum</i>
+						</q>
+					</p>
+				</div>
+				<div class="subscribe__item subscribe__item--form">
+					<p class="subscribe__heading text text--700 text--uppercase">
+						SUBSCRIBE
+					</p>
+					<p class="subscribe__text text text--uppercase">
+						FOR OUR NEWLETTER AND PROMOTION
+					</p>
+					<form action="#" class="subscribe__email-input">
+						<input
+							type="email"
+							class="input subscribe__input"
+							placeholder="Enter Your Email"
+						/>
+						<input
+							type="button"
+							class="text--reverse subscribe__btn"
+							value="Subscribe"
+						/>
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer class="footer page__footer">
+			<div class="footer__inner container">
+				<div class="footer__copyright">
+					<p class="text text--reverse">
+						&copy; 2021 Brand All Rights Reserved.
+					</p>
+				</div>
+				<div class="footer__social">
+					<a href="" class="link footer__link">
+						<i class="fa-brands fa-facebook-f"></i> </a
+					><a href="" class="link footer__link">
+						<i class="fa-brands fa-instagram"></i> </a
+					><a href="" class="link footer__link">
+						<i class="fa-brands fa-pinterest-p"></i> </a
+					><a href="" class="link footer__link">
+						<i class="fa-brands fa-twitter"></i>
+					</a>
+				</div>
+			</div>
+		</footer>
+		<script src="/script.js"></script>
+		<script src="/app.js"></script>
+	</body>
+</html>

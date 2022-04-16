@@ -1,0 +1,23 @@
+/** @format */
+
+.icon-cart-wrapper {
+  position: relative;
+
+  @media (max-width: 575px) {
+    display: none;
+  }
+
+  &__badge {
+    color: white;
+    background: $major-color;
+    border-radius: 50%;
+    position: absolute;
+    font-size: 12px;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    line-height: 20px;
+    top: -22px;
+    right: -8px;
+  }
+}

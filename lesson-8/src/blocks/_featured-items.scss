@@ -1,0 +1,15 @@
+.featured-items {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 95px;
+
+	&__head {
+		text-align: center;
+		margin-bottom: 48px;
+	}
+
+	&__inner {
+		margin-bottom: 48px;
+	}
+}

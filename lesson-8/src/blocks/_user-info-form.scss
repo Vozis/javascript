@@ -1,0 +1,27 @@
+.user-info-form {
+	width: 360px;
+
+	@media (max-width: 769px) {
+		flex-grow: 1;
+    flex-shrink: 0;
+	}
+
+	@media (max-width: 575px) {
+		width: 100%;
+    flex-shrink: 0;
+	}
+
+	&__input {
+		font-size: 13px;
+		line-height: 16px;
+		color: #b1b1b1;
+		padding: 12px 17px;
+		border: 1px solid #a4a4a4;
+		width: inherit;
+		display: block;
+	}
+
+	&__heading {
+		margin-bottom: 20px;
+	}
+}

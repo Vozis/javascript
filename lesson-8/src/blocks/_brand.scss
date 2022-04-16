@@ -1,0 +1,49 @@
+/** @format */
+
+.brand {
+  background-color: #f4e3e6;
+  min-height: 350px;
+  position: relative;
+  margin-bottom: 65px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    min-height: inherit;
+
+    @media (max-width: 575px) {
+      justify-content: center;
+    }
+  }
+
+  &__left,
+  &__right {
+    width: 50%;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__left {
+    @media (max-width: 575px) {
+      display: none;
+    }
+  }
+
+  &__promo {
+    padding-left: 15px;
+    border-left: 12px solid #ff627d;
+    min-width: 280px;
+  }
+
+  &__img {
+    margin-left: -100px;
+
+    @media (max-width: 1199px) {
+      width: 100%;
+    }
+  }
+}

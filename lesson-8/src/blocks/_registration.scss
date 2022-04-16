@@ -1,0 +1,110 @@
+.registration {
+	margin-top: 64px;
+	margin-bottom: 96px;
+
+	@media (max-width: 769px) {
+		margin-top: 40px;
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+
+		@media (max-width: 575px) {
+			flex-direction: column;
+		}
+	}
+
+	&__form {
+		margin-right: 128px;
+		@media (max-width: 769px) {
+			margin-right: 22px;
+		}
+
+		@media (max-width: 575px) {
+			margin-right: 0;
+			margin-bottom: 40px;
+		}
+	}
+
+	&__input:not(:last-child) {
+		margin-bottom: 20px;
+	}
+
+	&__radio {
+		margin-top: 33px;
+		margin-bottom: 33px;
+
+		& input[type="radio"] {
+			margin-right: 10px;
+		}
+
+		& input[type="radio"]:not(:first-child) {
+			margin-left: 20px;
+		}
+	}
+
+	&__form-text {
+		font-size: 13px;
+		line-height: 16px;
+		color: #b1b1b1;
+		font-size: 13px;
+		line-height: 16px;
+		margin-bottom: 39px;
+	}
+
+	&__perks {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 16px;
+		line-height: 19px;
+		color: #000000;
+	}
+
+	&__heading {
+		margin-bottom: 32px;
+		font-weight: 300;
+		font-size: 24px;
+		line-height: 29px;
+
+		@media (max-width: 769px) {
+			font-size: 16px;
+			line-height: 19px;
+		}
+	}
+
+	&__text {
+		margin-bottom: 22px;
+		font-weight: 300;
+		font-size: 24px;
+		line-height: 29px;
+
+		@media (max-width: 769px) {
+			font-size: 16px;
+			line-height: 19px;
+		}
+	}
+
+	&__list {
+		list-style: none;
+	}
+
+	&__item {
+		position: relative;
+		padding-left: 43px;
+
+		&::before {
+			content: "";
+			background: url(#{$img-path}/perk-ppiny.svg) no-repeat;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 20px;
+			height: 16px;
+		}
+	}
+
+	&__item:not(:last-child) {
+		margin-bottom: 16px;
+	}
+}
