@@ -1,0 +1,41 @@
+.footer {
+	background: #222224;
+	height: 75px;
+
+	@media (max-width: 575px) {
+		height: 143px;
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: inherit;
+
+		@media (max-width: 575px) {
+			flex-direction: column-reverse;
+			align-items: center;
+			justify-content: space-evenly;
+			height: inherit;
+		}
+	}
+
+	&__link {
+		display: inline-block;
+		width: 32px;
+		height: 32px;
+		line-height: 32px;
+		text-align: center;
+		background-color: white;
+		color: black;
+
+		&:not(:last-child) {
+			margin-right: 7px;
+		}
+
+		&:hover {
+			background-color: $major-color;
+			color: white;
+		}
+	}
+}

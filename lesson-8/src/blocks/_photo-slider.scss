@@ -1,0 +1,54 @@
+.photo-slider {
+	min-height: 777px;
+	border-top: 1px solid #eaeaea;
+	border-bottom: 1px solid #eaeaea;
+	background: #f7f7f7;
+	display: flex;
+	align-items: center;
+	position: relative;
+
+	@media (max-width: 769px) {
+		min-height: 624px;
+	}
+
+	&__img {
+		max-width: 100%;
+		margin-top: 11px;
+		margin-bottom: auto;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+
+		@media (max-width: 769px) {
+			margin-top: auto;
+		}
+	}
+
+	&__arrow {
+		width: 47px;
+		height: 47px;
+		background: rgba(42, 42, 42, 0.15);
+		position: absolute;
+		margin: auto;
+		top: 0;
+		bottom: 0;
+		font-size: 21px;
+		line-height: 47px;
+		text-align: center;
+		color: #000;
+
+		&:hover {
+			color: $major-color;
+		}
+	}
+
+	&__arrow--left {
+		right: auto;
+		left: 0;
+	}
+
+	&__arrow--right {
+		right: 0;
+		left: auto;
+	}
+}

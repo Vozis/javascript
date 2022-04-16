@@ -1,0 +1,27 @@
+.pagination {
+	margin-top: 48px;
+	margin-bottom: 96px;
+
+	&__toggle {
+		width: 284px;
+		height: 42px;
+		border: 1px solid #ebebeb;
+		margin: 0 auto;
+		padding: 13px 16px;
+		display: flex;
+		justify-content: space-between;
+		border-radius: 3px;
+	}
+
+	&__page {
+		line-height: 14px;
+		color: #c4c4c4;
+		font-weight: 300;
+		font-size: 19px;
+		padding: 0 8px;
+
+		&:hover {
+			color: #ef5b70;
+		}
+	}
+}

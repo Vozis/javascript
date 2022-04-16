@@ -1,0 +1,51 @@
+.filter-category {
+	display: flex;
+	gap: 28px;
+
+	@media (max-width: 769px) {
+		justify-content: end;
+	}
+
+	@media (max-width: 575px) {
+		gap: 13px;
+		justify-content: end;
+	}
+
+	&__item {
+		position: relative;
+
+		@media (max-width: 575px) {
+			font-size: 12px;
+		}
+	}
+
+	&__arrow {
+		margin-left: 10px;
+		margin-bottom: 2px;
+
+		@media (max-width: 575px) {
+			margin-left: 6px;
+			margin-bottom: 1px;
+		}
+	}
+
+	&__wrap {
+		cursor: pointer;
+	}
+
+	&__popup {
+		position: absolute;
+		left: 0;
+		top: 25px;
+		width: 79px;
+		height: 103px;
+		background: #ffffff;
+		box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+		z-index: 2;
+		padding: 7px 9px;
+	}
+
+	&__input:not(:last-child) {
+		margin-bottom: 4px;
+	}
+}

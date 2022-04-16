@@ -1,0 +1,338 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<script
+			src="https://kit.fontawesome.com/fe37802d54.js"
+			crossorigin="anonymous"
+		></script>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Cart</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+			integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body class="page">
+		<header class="header page__header">
+			<div class="container header__inner">
+				<div class="header__left">
+					<a href="index.html">
+						<img class="logo header__logo" src="img/logo.svg" alt="logo" />
+					</a>
+					<img
+						class="icon icon-search header__icon-search"
+						src="img/search.svg"
+						alt=""
+					/>
+				</div>
+				<div class="header__right">
+					<img
+						class="icon icon-burger header__icon-burger"
+						src="img/menu-burger.svg"
+						alt="menu"
+					/>
+					<img
+						class="icon icon-user header__icon-user"
+						src="img/person-logo.svg"
+						alt="user"
+					/>
+					<span class="icon-cart-wrapper header__icon-cart-wrapper">
+						<img
+							class="icon icon-cart icon-cart-wrapper__img"
+							src="img/basket.svg"
+							alt="cart"
+						/>
+						<span class="icon-cart-wrapper__badge">5</span>
+					</span>
+				</div>
+			</div>
+			<div class="header__menu hidden">
+				<img
+					src="img/close-icon.svg"
+					alt="close-icon"
+					class="icon-close menu__close"
+				/>
+				<nav class="menu">
+					<span class="menu__heading text--uppercase text--700">Menu</span>
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a href="#" class="link menu__link text--uppercase text--red"
+								>Man</a
+							>
+							<ul class="submenu__list menu__submenu">
+								<li class="submenu__item">
+									<a class="link submenu__link text--capitalize" href="#"
+										>Accessories</a
+									>
+								</li>
+								<li class="submenu__item">
+									<a class="link submenu__link text--capitalize" href="#"
+										>Bags</a
+									>
+								</li>
+								<li class="submenu__item">
+									<a class="link submenu__link text--capitalize" href="#"
+										>Denim</a
+									>
+								</li>
+								<li class="submenu__item">
+									<a class="link submenu__link text--capitalize" href="#"
+										>T-Shirts</a
+									>
+								</li>
+							</ul>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="link menu__link text--uppercase text--red"
+								>Woman</a
+							>
+
+							<ul class="submenu__list menu__submenu">
+								<li class="submenu__item">
+									<a class="link submenu__link text--capitalize" href="#"
+										>Accessories</a
+									>
+								</li>
+								<li class="submenu__item">
+									<a class="link submenu__link text--capitalize" href="#"
+										>Jackets & Coats</a
+									>
+								</li>
+								<li class="submenu__item">
+									<a class="link submenu__link text--capitalize" href="#"
+										>Polos</a
+									>
+								</li>
+								<li class="submenu__item">
+									<a class="link submenu__link text--capitalize" href="#"
+										>T-Shirts</a
+									>
+								</li>
+								<li class="submenu__item">
+									<a class="link submenu__link text--capitalize" href="#"
+										>Shirts</a
+									>
+								</li>
+							</ul>
+						</li>
+						<li class="menu__item">
+							<a href="#" class="link menu__link text--uppercase text--red"
+								>Kids</a
+							>
+
+							<ul class="submenu__list menu__submenu">
+								<li class="submenu__item">
+									<a class="link submenu__link text--capitalize" href="#"
+										>Accessories</a
+									>
+								</li>
+								<li class="submenu__item">
+									<a class="link submenu__link text--capitalize" href="#"
+										>Jackets & Coats</a
+									>
+								</li>
+								<li class="submenu__item">
+									<a class="link submenu__link text--capitalize" href="#"
+										>Polos</a
+									>
+								</li>
+								<li class="submenu__item">
+									<a class="link submenu__link text--capitalize" href="#"
+										>T-Shirts</a
+									>
+								</li>
+								<li class="submenu__item">
+									<a class="link submenu__link text--capitalize" href="#"
+										>Shirts</a
+									>
+								</li>
+								<li class="submenu__item">
+									<a class="link submenu__link text--capitalize" href="#"
+										>Bags</a
+									>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<div class="header__dark hidden"></div>
+		</header>
+		<div class="page-heading">
+			<div class="page-heading__inner container">
+				<h1 class="text text--red heading-1 text--uppercase">registration</h1>
+			</div>
+		</div>
+
+		<div class="cart">
+			<div class="cart__inner container">
+				<div class="cart__products">
+					<div class="cart-card cart__item">
+						<img src="img/close-icon.svg" alt="close-icon" class="icon-close" />
+						<div class="cart-card__inner">
+							<img src="img/cart-1.jpg" alt="" class="cart-card__img" />
+							<div class="cart-card__info">
+								<div class="text text--uppercase cart-card__name">
+									MANGO PEOPLE T-SHIRT
+								</div>
+								<div class="text text--cart cart-card__text cart-card__price">
+									Price:
+									<span class="text cart-card__text text--red">$300</span>
+								</div>
+								<div class="text text--cart cart-card__text cart-card__color">
+									Color: Red
+								</div>
+								<div class="text text--cart cart-card__text cart-card__size">
+									Size: Xl
+								</div>
+								<div class="cart-card__quantity">
+									<span class="text text--cart cart-card__text"
+										>Quantity:
+									</span>
+									<input
+										class="quantity-input cart-card__input"
+										type="text"
+										value="2"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cart-card cart__item">
+						<img src="img/close-icon.svg" alt="close-icon" class="icon-close" />
+						<div class="cart-card__inner">
+							<img src="img/cart-2.jpg" alt="" class="cart-card__img" />
+							<div class="cart-card__info">
+								<div class="text text--uppercase cart-card__name">
+									MANGO PEOPLE T-SHIRT
+								</div>
+								<div class="text text--cart cart-card__text cart-card__price">
+									Price:
+									<span class="text cart-card__text text--red">$300</span>
+								</div>
+								<div class="text text--cart cart-card__text cart-card__color">
+									Color: Red
+								</div>
+								<div class="text text--cart cart-card__text cart-card__size">
+									Size: Xl
+								</div>
+								<div class="cart-card__quantity">
+									<span class="text text--cart cart-card__text"
+										>Quantity:
+									</span>
+									<input
+										class="quantity-input cart-card__input"
+										type="text"
+										value="2"
+									/>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cart__product-buttons">
+						<button class="btn btn--black">CLEAR SHOPPING CART</button>
+						<button class="btn btn--black">CONTINUE SHOPPING</button>
+					</div>
+				</div>
+				<div class="cart__info">
+					<form action="#" class="user-info-form cart__form">
+						<div class="text text--gray user-info-form__heading">
+							SHIPPING ADRESS
+						</div>
+						<input
+							type="text"
+							class="user-info-form__input cart__input"
+							placeholder="Bangladesh"
+						/>
+						<input
+							type="text"
+							class="user-info-form__input cart__input"
+							placeholder="State"
+						/>
+						<input
+							type="text"
+							class="user-info-form__input cart__input"
+							placeholder="Postcode / Zip"
+						/>
+						<button class="btn btn--black btn--cart-info">GET A QUOTE</button>
+					</form>
+					<div class="cart__total">
+						<div class="cart__subtotal text">
+							SUB TOTAL <span class="text">$900</span>
+						</div>
+						<div class="cart__grandtotal">
+							GRAND TOTAL <span class="text text--red">$900</span>
+						</div>
+						<hr />
+						<button class="btn btn--red text--uppercase cart__btn">
+							PROCEED TO CHECKOUT
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="subscribe">
+			<div class="subscribe__inner container">
+				<div class="subscribe__item subscribe__item--quote">
+					<img src="img/IMG_0103.JPG" alt="" class="subscribe__img" />
+					<p class="text subscribe__quote">
+						<q
+							>Vestibulum quis porttitor dui! Quisque viverra nunc mi, a
+							<i>pulvinar purus condimentum</i>
+						</q>
+					</p>
+				</div>
+				<div class="subscribe__item subscribe__item--form">
+					<p class="subscribe__heading text text--700 text--uppercase">
+						SUBSCRIBE
+					</p>
+					<p class="subscribe__text text text--uppercase">
+						FOR OUR NEWLETTER AND PROMOTION
+					</p>
+					<form action="#" class="subscribe__email-input">
+						<input
+							type="email"
+							class="input subscribe__input"
+							placeholder="Enter Your Email"
+						/>
+						<input
+							type="button"
+							class="text--reverse subscribe__btn"
+							value="Subscribe"
+						/>
+					</form>
+				</div>
+			</div>
+		</div>
+		<footer class="footer page__footer">
+			<div class="footer__inner container">
+				<div class="footer__copyright">
+					<p class="text text--reverse">
+						&copy; 2021 Brand All Rights Reserved.
+					</p>
+				</div>
+				<div class="footer__social">
+					<a href="" class="link footer__link">
+						<i class="fa-brands fa-facebook-f"></i> </a
+					><a href="" class="link footer__link">
+						<i class="fa-brands fa-instagram"></i> </a
+					><a href="" class="link footer__link">
+						<i class="fa-brands fa-pinterest-p"></i> </a
+					><a href="" class="link footer__link">
+						<i class="fa-brands fa-twitter"></i>
+					</a>
+				</div>
+			</div>
+		</footer>
+		<script src="/script.js"></script>
+		<script src="/app.js"></script>
+	</body>
+</html>
